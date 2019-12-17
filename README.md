@@ -5,7 +5,7 @@ Chinese solar lunar calendar converter
 # Installation
 
 ```sh
-go get github.com/jetfueltw/solarlunar
+go get github.com/jetfueltw/solarlunar-go
 ```
 
 # Useage
