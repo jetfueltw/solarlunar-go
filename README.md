@@ -8,6 +8,10 @@ Chinese solar lunar calendar converter
 go get github.com/jetfueltw/solarlunar-go
 ```
 
+```go
+import "github.com/jetfueltw/solarlunar-go"
+```
+
 # Useage
 
 公曆轉農曆

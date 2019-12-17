@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jetfueltw/solarlunar"
+	"github.com/jetfueltw/solarlunar-go"
 	"github.com/stretchr/testify/assert"
 )
 
