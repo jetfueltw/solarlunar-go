@@ -1,4 +1,4 @@
-module github.com/jetfueltw/solarlunar
+module github.com/jetfueltw/solarlunar-go
 
 go 1.12
 
