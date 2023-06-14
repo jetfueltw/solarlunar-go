@@ -1,7 +1,7 @@
 package solarlunar_test
 
 import (
-	"io/ioutil"
+	"io"
 	"net/http"
 	"strconv"
 	"strings"
@@ -53,7 +53,7 @@ func getSolarToLunar(solar solarlunar.Solar) (solarlunar.Lunar, error) {
 	}
 	defer resp.Body.Close()
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return solarlunar.Lunar{}, err
 	}
@@ -96,7 +96,7 @@ func getLunarToSolar(lunar solarlunar.Lunar) (solarlunar.Solar, error) {
 	}
 	defer resp.Body.Close()
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return solarlunar.Solar{}, err
 	}

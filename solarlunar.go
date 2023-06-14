@@ -138,7 +138,7 @@ func getBitInt(data int, length int, shift int) int {
 	return (data & (((1 << uint32(length)) - 1) << uint32(shift))) >> uint32(shift)
 }
 
-//WARNING: Dates before Oct. 1582 are inaccurate
+// WARNING: Dates before Oct. 1582 are inaccurate
 func solarToInt(y int, m int, d int) int64 {
 	m = (m + 9) % 12
 	y = y - m/10
